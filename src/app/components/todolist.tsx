@@ -25,3 +25,22 @@ export default function TodoList() {
     </div>
   );
 }
+
+export default function TodoList() {
+    return (
+      <div style={person.theme}>
+        <h1>{person.name}'s Todos</h1>
+        <img
+          className="avatar"
+          src={`${baseUrl}${person.imageId}${person.imageSize}.jpg`} // Menggunakan string interpolation
+          alt={person.name}
+        />
+        <ul>
+          <li>Improve the videophone</li>
+          <li>Prepare aeronautics lectures</li>
+          <li>Work on the alcohol-fuelled engine</li>
+        </ul>
+      </div>
+    );
+  }
+  
